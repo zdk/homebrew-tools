@@ -1,36 +1,36 @@
-class RmHook < Formula
+class RmSafely < Formula
   desc "Safe rm command that backs up files to trash before deletion"
-  homepage "https://github.com/zdk/rm-hook"
-  url "https://github.com/zdk/rm-hook/archive/refs/heads/main.tar.gz"
+  homepage "https://github.com/zdk/rm-safely"
+  url "https://github.com/zdk/rm-safely/archive/refs/heads/main.tar.gz"
   version "1.0.0"
-  sha256 "5659068d2f7fd82a7239300badede4e305050e380bad8bdbd30a1558df10ed15"
+  sha256 "b89548fe105cb000c50b25ddfcb2876d6d856bd1d876ef9cc7873dafbd2d7016"
   license "MIT"
 
   def install
-    bin.install "rm-hook.sh" => "rm-hook"
+    bin.install "rm-safely.sh" => "rm-safely"
 
     # Create a wrapper script for easier integration
-    (bin / "rm-hook-install").write <<~EOS
+    (bin / "rm-safely-install").write <<~EOS
       #!/bin/bash
-      exec "#{bin}/rm-hook" install "$@"
+      exec "#{bin}/rm-safely" install "$@"
     EOS
 
-    (bin / "rm-hook-uninstall").write <<~EOS
+    (bin / "rm-safely-uninstall").write <<~EOS
       #!/bin/bash
-      exec "#{bin}/rm-hook" uninstall "$@"
+      exec "#{bin}/rm-safely" uninstall "$@"
     EOS
 
-    chmod 0o755, bin / "rm-hook-install"
-    chmod 0o755, bin / "rm-hook-uninstall"
+    chmod 0o755, bin / "rm-safely-install"
+    chmod 0o755, bin / "rm-safely-uninstall"
   end
 
   def caveats
     <<~EOS
       To install the rm hook:
-        rm-hook-install
+        rm-safely-install
 
       To uninstall the rm hook:
-        rm-hook-uninstall
+        rm-safely-uninstall
 
       The hook will intercept 'rm' commands and backup files to /tmp/.rm-trash
       before deletion. Use 'rm --rm' to bypass the safety and delete directly.
@@ -43,6 +43,6 @@ class RmHook < Formula
   end
 
   test do
-    system "#{bin}/rm-hook", "status"
+    system "#{bin}/rm-safely", "status"
   end
 end

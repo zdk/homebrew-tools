@@ -8,10 +8,10 @@ A collection useful tools
 brew tap zdk/tools
 ```
 
-- rm-hook
+- rm-safely
 
 ```bash
-brew install rm-hook
+brew install rm-safely
 ```
 
 - distrowat
