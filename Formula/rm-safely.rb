@@ -2,8 +2,8 @@ class RmSafely < Formula
   desc "Safe rm command that backs up files to trash before deletion"
   homepage "https://github.com/zdk/rm-safely"
   url "https://github.com/zdk/rm-safely/archive/refs/heads/main.tar.gz"
-  version "1.0.1"
-  sha256 "3a3dac0ee0ac09fb4730b49aa0eb610036de9f96ccb4c5f364862dc627ecf406"
+  version "1.0.2"
+  sha256 "922578574bb744fba6257ea7a233f61093b241bfb8df91c4353e3642c6985da9"
   license "MIT"
 
   def install
