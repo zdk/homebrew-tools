@@ -25,14 +25,15 @@ class RmSafely < Formula
 
   def caveats
     <<~EOS
-      Please run the following command to enable rm-safely:
+      After rm-safely is installed via brew.
+      To use it, please run the following command:
 
-        rm-safely install
+      ➡️  rm-safely install
 
       Then reload your shell:
 
-        source ~/.zshrc  # for zsh
-        source ~/.bashrc # for bash
+          source ~/.zshrc  # for zsh
+          source ~/.bashrc # for bash
     EOS
   end
 
