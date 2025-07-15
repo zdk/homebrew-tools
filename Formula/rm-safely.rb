@@ -7,7 +7,7 @@ class RmSafely < Formula
   license "MIT"
 
   def install
-    bin.install "rm-safely.sh" => "rm-safely"
+    bin.install "rm-safely" => "rm-safely"
 
     (bin / "rm-safely-install").write <<~EOS
       #!/bin/bash
