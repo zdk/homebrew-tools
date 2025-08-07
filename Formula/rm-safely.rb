@@ -3,7 +3,7 @@ class RmSafely < Formula
   homepage "https://github.com/zdk/rm-safely"
   url "https://github.com/zdk/rm-safely/archive/refs/heads/main.tar.gz"
   version "1.4.2"
-  sha256 "e6cf42755cd84e8582f4d41c63a35e993793361bc2be7b5cf69cb9585b6cbb94"
+  sha256 "e58efd82898d5182f785a62af8acc9d67a4b82e960bb71623fdcdd3af0d2140a"
   license "MIT"
 
   def install
