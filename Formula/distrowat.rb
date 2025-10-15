@@ -1,9 +1,9 @@
 class Distrowat < Formula
   desc "Command-line tool to fetch OS distribution information"
   homepage "https://github.com/zdk/distrowat"
-  url "https://raw.githubusercontent.com/zdk/distrowat/refs/heads/main/distrowat"
-  version "0.9.0"
-  sha256 "b273584c80e7437472d226660997b6739e866bf2f240318b581f6064cd396e2b"
+  url "https://raw.githubusercontent.com/zdk/distrowat/refs/tags/v0.9.1/distrowat"
+  version "0.9.1"
+  sha256 "d73d17a4edb5fb46546288cc291b276f291ebbda9012a6f2be7555dbc3151708"
   license "MIT"
 
   def install
