@@ -1,9 +1,9 @@
 class RmSafely < Formula
   desc "rm-safely - command that moves files to trash before deletion"
   homepage "https://github.com/zdk/rm-safely"
-  url "https://github.com/zdk/rm-safely/archive/refs/tags/v1.7.0.tar.gz"
-  version "1.7.0"
-  sha256 "1bb6ccc8db5f477006d527fec4079f4e3a93633a16ead78507fbfb573d77bf69"
+  url "https://github.com/zdk/rm-safely/archive/refs/tags/v1.7.1.tar.gz"
+  version "1.7.1"
+  sha256 "966c9f5fbced79b86ca534a601043bf3834c5c2906dc1a7de7a68186abe21eca"
   license "MIT"
 
   def install
