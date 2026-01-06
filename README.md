@@ -1,22 +1,29 @@
 # ZDK Homebrew Tap
 
-A collection of useful tools
+Homebrew tap repo for my software
+
+## A list of sofware
+* rm-safely
+* distrowat
+
 
 ## Installation
+
+Tap to add this repo to Homebrew
 
 ```bash
 brew tap zdk/tools
 ```
 
-## Tools
+Then,
 
-- rm-safely
+* rm-safely
 
 ```bash
 brew install rm-safely
 ```
 
-- distrowat
+* distrowat
 
 ```bash
 brew install distrowat
