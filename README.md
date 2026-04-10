@@ -2,28 +2,29 @@
 
 Homebrew tap repo for my software
 
-## A list of sofware
-* rm-safely
-* distrowat
-
-
 ## Installation
-
-Tap to add this repo to Homebrew
 
 ```bash
 brew tap zdk/tools
 ```
 
-Then,
+## Software
 
-* rm-safely
+### lowfat
+
+Low-fat command output for LLM environments. Strips noise, saves tokens.
+
+```bash
+brew install lowfat
+```
+
+### rm-safely
 
 ```bash
 brew install rm-safely
 ```
 
-* distrowat
+### distrowat
 
 ```bash
 brew install distrowat
