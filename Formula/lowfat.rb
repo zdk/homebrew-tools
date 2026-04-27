@@ -1,9 +1,9 @@
 class Lowfat < Formula
   desc "Low-fat command output for LLM environments"
   homepage "https://github.com/zdk/lowfat"
-  url "https://github.com/zdk/lowfat/archive/refs/tags/v0.3.6.tar.gz"
-  version "0.3.6"
-  sha256 "3c4525af5344c35aa7ac90a76ef5f53e5bfbd70d54a68654bd10b81051ec3d9d"
+  url "https://github.com/zdk/lowfat/archive/refs/tags/v0.3.7.tar.gz"
+  version "0.3.7"
+  sha256 "f2b1c22b44268648b96e3d536be7acf3359da2f21f3cfcba401e2c55d49f5d25"
   license "Apache-2.0"
 
   depends_on "rust" => :build
