@@ -1,8 +1,8 @@
 class ContainerNetpath < Formula
   desc "Show apple/container network paths"
   homepage "https://github.com/zdk/container-netpath"
-  url "https://github.com/zdk/container-netpath/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "f1eb3f079fa18ff8c7cd8cefd0ed9272e1989e2b2427940e29c4601de073ce98"
+  url "https://github.com/zdk/container-netpath/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "2862f58cb9d81f7f546ed70ab93631beb0bdad84256b8303dd1db4d1462f1cf8"
   license "MIT"
 
   depends_on xcode: ["16.0", :build]
@@ -17,17 +17,8 @@ class ContainerNetpath < Formula
 
   def caveats
     <<~EOS
-      Register the plugin with apple/container:
-
-        container from Apple's .pkg:
-          sudo mkdir -p /usr/local/libexec/container-plugins
-          sudo ln -sfn #{opt_libexec}/netpath /usr/local/libexec/container-plugins/netpath
-
-        container from Homebrew:
-          mkdir -p #{HOMEBREW_PREFIX}/libexec/container-plugins
-          ln -sfn #{opt_libexec}/netpath #{HOMEBREW_PREFIX}/libexec/container-plugins/netpath
-
-      Then run: container netpath
+      Enable the apple/container plugin (asks for sudo if needed):
+        netpath enable
     EOS
   end
 
