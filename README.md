@@ -29,3 +29,11 @@ brew install rm-safely
 ```bash
 brew install distrowat
 ```
+
+### kubectl-skyline
+
+Explore a Kubernetes cluster as an interactive 3D city.
+
+```bash
+brew install kubectl-skyline
+```
